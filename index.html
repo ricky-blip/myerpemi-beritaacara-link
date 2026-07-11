@@ -3,9 +3,11 @@
   const params = new URLSearchParams(window.location.search);
   const target = params.get("target");
 
-  if (target === "approval") {
-    window.location.replace("myerpemi://open/approval-budgeting-pr-department");
-  } else {
-    window.location.replace("myerpemi://open/validasi-berita-acara");
-  }
+  const map = {
+    "approval-budgeting": "myerpemi://open/approval-budgeting-pr-department",
+    "approval-pr": "myerpemi://open/approval-pr-department",
+    "validasi": "myerpemi://open/validasi-berita-acara",
+  };
+
+  window.location.replace(map[target] || "myerpemi://open/dashboard");
 </script>
