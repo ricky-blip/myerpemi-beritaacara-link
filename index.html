@@ -1,0 +1,11 @@
+<!-- index.html -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const target = params.get("target");
+
+  if (target === "approval") {
+    window.location.replace("myerpemi://open/approval-budgeting-pr-department");
+  } else {
+    window.location.replace("myerpemi://open/validasi-berita-acara");
+  }
+</script>
