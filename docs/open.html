@@ -4,12 +4,9 @@
   <meta charset="UTF-8">
   <title>Opening App…</title>
   <script>
-    // Redirect ke deep link Flutter
     window.location.replace("myerpemi://open/validasi-berita-acara");
-    
-    // fallback jika aplikasi tidak terinstall → buka Play Store
     setTimeout(() => {
-      window.location.href = "https://play.google.com/store/apps/details?id=com.empresa.emi"; 
+      window.location.href = "https://play.google.com/store/apps/details?id=com.empresa.emi";
     }, 1500);
   </script>
 </head>
